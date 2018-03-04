@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+{% extends "basicapp/basic.html" %}
+<!-- {% load my_filters %} -->
+  {% block body_block %}
+    <h1>Welcome to Index!</h1>
+    <h3>INDEX page inherited from basic.html!</h3>
+    <h1>{{ text|cut:'hello' }}</h1>
+    <h1>{{ number|add:"100" }}</h1>
+    {% endblock %}
